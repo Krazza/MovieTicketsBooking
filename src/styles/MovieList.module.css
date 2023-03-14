@@ -5,4 +5,5 @@
     background-color: #000000;
     flex-direction: column;
     row-gap: 5vh;
+    padding: 8vh 0 8vh 0;
 }
