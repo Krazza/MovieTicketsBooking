@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.mainHeader{
+    height: 8vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F2B705;
+    
+}
+
+ul{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    column-gap: 3vw;
+    list-style-type: none;
+}
+
+nav{
+    height: 100%;
+    padding-right: 2vw;
+}
+
+.customIcon{
+    padding-left: 2vw;
+}
+
+.myButtonClass{
+    height: 5.5vh;
+    width: 8vw;
+    border-radius: 12px;
+    border-width: 3px;
+    border-color: #000000;
+    background-color: #F2B705;
+    font-weight: 550;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.myButtonClass:hover{
+    color: white;
+    background-color: #000000;
+    cursor: pointer;
+}
+
+.buttonContainer{
+    display: flex;
+    column-gap: 1vw;
+}

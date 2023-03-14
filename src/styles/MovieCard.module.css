@@ -1,0 +1,7 @@
+.movieCard{
+    height: 22vh;
+    width: 9vw;
+    border-radius: 12px;
+    border-width: 0;
+    background-color: #F2B705;;
+}

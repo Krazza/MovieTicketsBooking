@@ -1,0 +1,92 @@
+[
+    {
+        "date" : "15.03.2023",
+        "movies" : [{
+            "title" : "Avatar: Way of Water",
+            "price" : 15.5,
+            "length" : "3h 12m",
+            "location" : "Helsinki movie theater",
+            "isSoldOut" : false,
+            "seats" : [
+                [false, false, false, false, false, false, false, false], 
+                [false, false, false, false, false, false, false, false, false, false, false, false], 
+                [false, false, false, true, true, false, false, false, false, false, false, false], 
+                [false, false, false, false, false, false, false, false, false, false, false, false], 
+                [false, false, false, false, false, false, false, false]
+            ]},
+            {
+                "title" : "Spider-Man: No way home",
+                "price" : 15.5,
+                "length" : "2h 28m",
+                "location" : "Helsinki movie theater",
+                "isSoldOut" : false,
+                "seats" : [
+                    [false, false, false, false, false, false, false, false], 
+                    [false, false, false, false, false, false, false, false, false, false, false, false], 
+                    [false, false, false, false, false, false, false, false, false, false, false, false], 
+                    [false, false, false, false, false, false, false, false, false, false, false, false], 
+                    [false, false, false, false, false, false, false, false]
+                ]
+            },
+            {
+                "title" : "The Godfather",
+                "price" : 10,
+                "length" : "2h 55m",
+                "location" : "Helsinki movie theater",
+                "isSoldOut" : false,
+                "seats" : [
+                    [true, true, false, true, true, false, false, false], 
+                    [false, false, true, false, false, false, true, true, true, false, false, false], 
+                    [false, false, false, true, true, false, false, false, true, true, false, false], 
+                    [false, false, true, true, false, true, true, true, false, false, false, false], 
+                    [false, false, false, false, false, false, false, false]
+                ]
+            }
+        ]
+    },
+    {
+        "date" : "16.03.2023",
+        "movies" : [{
+            "title" : "Avatar: Way of Water",
+            "price" : 15.5,
+            "length" : "3h 12m",
+            "location" : "Helsinki movie theater",
+            "isSoldOut" : false,
+            "seats" : [
+                [false, false, false, false, false, false, false, false], 
+                [false, false, false, false, false, false, false, false, false, false, false, false], 
+                [false, false, false, true, true, false, false, false, false, false, false, false], 
+                [false, false, false, false, false, false, false, false, false, false, false, false], 
+                [false, false, false, false, false, false, false, false]
+            ]},
+            {
+                "title" : "Spider-Man: No way home",
+                "price" : 15.5,
+                "length" : "2h 28m",
+                "location" : "Helsinki movie theater",
+                "isSoldOut" : false,
+                "seats" : [
+                    [false, false, false, false, false, false, false, false], 
+                    [false, false, false, false, false, false, false, false, false, false, false, false], 
+                    [false, false, false, false, false, false, false, false, false, false, false, false], 
+                    [false, false, false, false, false, false, false, false, false, false, false, false], 
+                    [false, false, false, false, false, false, false, false]
+                ]
+            },
+            {
+                "title" : "The Godfather",
+                "price" : 10,
+                "length" : "2h 55m",
+                "location" : "Helsinki movie theater",
+                "isSoldOut" : false,
+                "seats" : [
+                    [true, true, false, true, true, false, false, false], 
+                    [false, false, true, false, false, false, true, true, true, false, false, false], 
+                    [false, false, false, true, true, false, false, false, true, true, false, false], 
+                    [false, false, true, true, false, true, true, true, false, false, false, false], 
+                    [false, false, false, false, false, false, false, false]
+                ]
+            }
+        ]
+    }
+]

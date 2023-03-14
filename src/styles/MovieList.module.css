@@ -1,0 +1,8 @@
+.movieList{
+    display: flex;
+    justify-content: space-around;
+    min-height: 100vh;
+    background-color: #000000;
+    flex-direction: column;
+    row-gap: 5vh;
+}

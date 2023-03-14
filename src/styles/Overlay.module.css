@@ -1,0 +1,41 @@
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(5, 24, 32, 0.5);
+}
+
+.popup{
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 0;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20% auto auto 15%;
+    background: #F2B705;
+    height: 40vh;
+    width: 70vw;
+    border-radius: 22px;
+}
+
+.myButtonClass{
+    height: 5.5vh;
+    width: 8vw;
+    border-radius: 12px;
+    border-width: 3px;
+    border-color: #000000;
+    background-color: #F2B705;
+    font-weight: 550;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.myButtonClass:hover{
+    color: white;
+    background-color: #000000;
+    cursor: pointer;
+}
