@@ -4,5 +4,5 @@ export interface MovieEntry{
     length: string,
     location: string,
     isSoldOut: boolean,
-    seats: boolean[]
+    seats: boolean[][]
 }

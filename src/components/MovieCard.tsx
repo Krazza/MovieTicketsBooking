@@ -1,5 +1,6 @@
-import React from "react";
+// import { useContext } from "react";
 import styles from "../styles/MovieCard.module.css";
+// import { myGlobalContext } from "./GlobalContextProvider";
 
 function MovieCard()
 {

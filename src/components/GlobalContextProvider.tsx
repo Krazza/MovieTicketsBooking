@@ -1,14 +1,8 @@
-import { useState } from 'react';
-import { myGlobalContext } from './components/GlobalContextProvider';
-import { DayEntryContext } from './interfaces/DayEntryContext';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { MovieList } from './components/MovieList';
-import Layout from './pages/Layout';
-import '../src/styles/App.css';
+import { createContext } from "react";
+import { DayEntryContext } from "../interfaces/DayEntryContext";
 
-function App() {
 
-    const initialContext : DayEntryContext = 
+const initialContext : DayEntryContext = 
 {
     dayEntries : [{
         date : "15.03.2023",
@@ -34,19 +28,4 @@ function App() {
     setDayEntries : () => {}
 }
 
-    const [data, setData] = useState<DayEntryContext>(initialContext);
-
-    return (
-        <myGlobalContext.Provider value={data}>
-        <BrowserRouter>
-                <Routes>
-                    <Route path="/" element={<Layout/>}>
-                        <Route index element={<MovieList/>}/>
-                    </Route>
-                </Routes>
-        </BrowserRouter>
-        </myGlobalContext.Provider>
-    );
-}
-
-export default App;
+export const myGlobalContext = createContext<DayEntryContext>(initialContext);
