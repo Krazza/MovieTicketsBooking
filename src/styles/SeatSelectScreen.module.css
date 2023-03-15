@@ -1,0 +1,79 @@
+.pageContainer{
+    display: flex;
+}
+
+.sideMenu{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    min-width: 25vw;
+    background-color: #4D4D4D;
+}
+
+
+.seatsContainer{
+    display: flex;
+    justify-content: space-between;
+    min-height: 100vh;
+    height: fit-content;
+    width: 75vw;
+    background-color: #000000;
+    flex-direction: column;
+    row-gap: 5vh;
+    padding: 0 0 8vh 0;
+}
+
+.seatsContainer h2{
+    color: #F2B705;
+    align-self: center;
+    font-size: 3rem;
+}
+
+.poster{
+    padding: 8vh 0 0 0;
+    display: flex;
+    min-height: 20vh;
+    height: 100%;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.seatFree, .seatOccupied{
+    height: 5vh;
+    width: 3vw;
+}
+
+.seatFree{
+    background-color: #000000;
+    border-width: 4px;
+    border-color: #F2B705;
+    border-style: solid;
+    border-radius: 12px;
+    transition: background-color 0.5s ease
+}
+
+.seatFree:hover{
+    background-color: green;
+}
+
+.seatOccupied{
+    background-color: #4D4D4D;
+    border-width: 4px;
+    border-color: red;
+    border-style: solid;
+    border-radius: 12px;
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+    column-gap: 1vw;
+    min-height: 10vh;
+}
+
+.placement{
+    min-height: 40vh;
+    row-gap: 4vh;
+    display: flex;
+    flex-direction: column;
+}

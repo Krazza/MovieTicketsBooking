@@ -5,16 +5,19 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { MovieList } from './components/MovieList';
 import Layout from './pages/Layout';
 import '../src/styles/App.css';
+import SeatSelectScreen from './components/SeatSelectScreen';
 
 function App() {
 
     const initialContext : DayEntryContext = 
 {
     dayEntries : [{
+        id: "0",
         date : "15.03.2023",
         movies : 
             [
                 {
+                    id: "1",
                     title : "Avatar: Way of Water",
                     price : 15.5,
                     length : "3h 12m",
@@ -26,9 +29,17 @@ function App() {
                         [false, false, false, true, true, false, false, false, false, false, false, false], 
                         [false, false, false, false, false, false, false, false, false, false, false, false], 
                         [false, false, false, false, false, false, false, false]
-                    ]
+                    ],
+                    tempSeats : [
+                        [false, false, false, false, false, false, false, false], 
+                        [false, false, false, false, false, false, false, false, false, false, false, false], 
+                        [false, false, false, true, true, false, false, false, false, false, false, false], 
+                        [false, false, false, false, false, false, false, false, false, false, false, false], 
+                        [false, false, false, false, false, false, false, false]
+                    ],
+                    userBookedTickets : [{}]
                 }
-            ]
+            ],
         }
     ],
     setDayEntries : () => {}
@@ -42,6 +53,7 @@ function App() {
                 <Routes>
                     <Route path="/" element={<Layout/>}>
                         <Route index element={<MovieList/>}/>
+                        <Route path="/tickets/:id" element={<SeatSelectScreen/>}/>
                     </Route>
                 </Routes>
         </BrowserRouter>

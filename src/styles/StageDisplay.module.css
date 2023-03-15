@@ -1,0 +1,26 @@
+.stageContainer{
+    display: flex;
+    justify-content: space-around;  
+}
+
+#tickets, #confirmation, #payments{
+    height: 8vh;
+    width: 18vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 22px;
+    border-width: 0;
+    font-size: 1.6rem;
+    font-weight: 550;
+}
+
+.active{
+    background-color: #E2E2E3;
+    color: #070707;
+}
+
+.inactive{
+    background-color: #4D4D4D;
+    color: #FFFFFF;
+}

@@ -15,7 +15,7 @@ function Nav()
     return (
         <nav>
             <ul>
-                <li><NavLink to="/homepage">{"Homepage"}</NavLink></li>
+                <li><NavLink to="/">{"Homepage"}</NavLink></li>
                 <li><NavLink to="/bookings">{"My Bookings"}</NavLink></li>
                 <section className={styles.buttonContainer}>
                     <button className={styles.myButtonClass} onClick={() => setPopUpVisibility(true)}>{"REGISTER"}</button>

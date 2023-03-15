@@ -9,7 +9,11 @@ function DayFeature(props : DayEntry)
     return(
         <div className={styles.dayFeature}>
             <h2 className={styles.dayDate}>{props.date}</h2>
-            <section className={styles.movieList}>{props.movies.map((film : MovieEntry) => <MovieCard key={film.title}/>)}</section>
+            <section className={styles.movieList}>{props.movies.map((film : MovieEntry) => 
+            <MovieCard key={film.title} date={props.date} 
+            length={film.length} isSoldOut={film.isSoldOut} 
+            price={film.price} seats={film.seats}
+            location={film.location} title={film.title} id={film.id}/>)}</section>
         </div>
     )
 }
