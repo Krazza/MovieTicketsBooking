@@ -6,7 +6,7 @@ function Row(props: any)
 {
     return(
         <div className={styles.row}>{props.seats.map((seat : boolean, index : number) =>
-        <Seat key={index} rowNumber={props.rowNumber} seatNumber={index} isTaken={seat} movieID={props.movieID}/>)}</div>
+        <Seat/>)}</div>
     )
 }
 

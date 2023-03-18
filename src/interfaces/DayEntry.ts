@@ -1,7 +1,7 @@
 import { MovieEntry } from "./MovieEntry";
 
 export interface DayEntry{
-    id: string,
+    dayID: string,
     date: string,
     movies: MovieEntry[],
 }
