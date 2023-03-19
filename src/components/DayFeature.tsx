@@ -19,7 +19,10 @@ function DayFeature(props : {dayID : string, date : string})
     return(
         <div className={styles.dayFeature}>
             <h2 className={styles.dayDate}>{dayFeatureDate}</h2>
-            <section className={styles.movieList}>{movieList?.map(movie => <MovieCard key={`${movie.screeningID.dayID}::${movie.screeningID.movieID}`} screeningID = {movie.screeningID}/>)}</section>
+            <section className={styles.movieList}>
+                {movieList?.map(movie =>
+                    <MovieCard key={`${movie.screeningID.dayID}::${movie.screeningID.movieID}`} screeningID = {movie.screeningID}/>)}
+            </section>
         </div>
     )   
 }

@@ -10,6 +10,10 @@ import Row from "./Row";
 function SeatSelectScreen()
 {
     const { screeningID } = useParams();
+    const dayID = screeningID?.substring(0, 8);
+    const movieID = screeningID?.substring(10, 12);
+
+    // continue here, 1) display the seats in the UI, 2) Make it possible to occupy/select a seat
 
     return(
         <div className={styles.pageContainer}>
