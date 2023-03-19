@@ -1,4 +1,5 @@
 import { ScreeningID } from "../types/ScreeningID";
+import { Ticket } from "../types/Ticket";
 
 export interface MovieEntry{
     screeningID: ScreeningID,
@@ -9,5 +10,5 @@ export interface MovieEntry{
     location: string,
     isSoldOut: boolean,
     seats: boolean[][], // updt. from REMOTE, work with it, updt. REMOTE upon order confirmation. CONF: find actual data, find !1!1occupated data, save
-    ticketOwners?: string [][]
+    purchasedTickets?: Ticket[]
 }

@@ -50,3 +50,4 @@ const initialContext : DayEntryContext =
 }
 
 export const myGlobalContext = createContext<DayEntryContext>(initialContext);
+export { initialContext }

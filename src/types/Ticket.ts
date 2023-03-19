@@ -5,4 +5,5 @@ export type Ticket = {
     title : string;
     date : string;
     seat : {rowNumber: number, seatNumber: number};
+    uid? : string;
 }
