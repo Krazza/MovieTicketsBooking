@@ -7,8 +7,10 @@ import { initialContext, myGlobalContext } from './components/GlobalContextProvi
 
 function App() {
 
+    const currentContext = initialContext;
+
     return (
-        <myGlobalContext.Provider value={initialContext}>
+        <myGlobalContext.Provider value={currentContext}>
         <BrowserRouter>
                 <Routes>
                     <Route path="/" element={<Layout/>}>

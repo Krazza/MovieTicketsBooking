@@ -23,14 +23,30 @@ const initialContext : DayEntryContext =
                     [false, false, false, false, false, false, false, false, false, false, false, false], 
                     [false, false, false, false, false, false, false, false]
                 ]
+            },
+            {
+                screeningID: {dayID:"15032023", movieID:"02"},
+                movieID: "02",
+                title : "Spider-Man: Across the Spider-Verse",
+                price : 15.5,
+                length : "1h 55m",
+                location : "Helsinki movie theater",
+                isSoldOut : false,
+                seats : [
+                    [false, false, false, false, false, false, false, false], 
+                    [false, false, false, false, false, false, false, false, false, false, false, false], 
+                    [false, false, false, true, true, false, false, false, false, false, false, false], 
+                    [false, false, false, false, false, false, false, false, false, false, false, false], 
+                    [false, false, false, false, false, false, false, false]
+                ]
             }
         ]},
         {
-        dayID : "15032023",
-        date : "15.03.2023",
+        dayID : "16032023",
+        date : "16.03.2023",
         movies : [
             {
-                screeningID: {dayID:"15032023", movieID:"02"},
+                screeningID: {dayID:"16032023", movieID:"02"},
                 movieID: "02",
                 title : "Spider-Man: Across the Spider-Verse",
                 price : 15.5,

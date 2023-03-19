@@ -1,19 +1,22 @@
-import React from "react";
+import React, { useContext } from "react";
 import MovieCard from "./MovieCard";
 import { MovieEntry } from "../interfaces/MovieEntry";
 import { DayEntry } from "../interfaces/DayEntry";
 import styles from "../styles/DayFeature.module.css";
+import { myGlobalContext } from "./GlobalContextProvider";
 
-function DayFeature(props : DayEntry)
+function DayFeature(props : {dayID : string, date : string})
 {
+    const dayFeatureID = props.dayID;
+    const dayFeatureDate = props.date;
+    const data = useContext(myGlobalContext);
+    const currentDay = data.dayEntries.find(entry => entry.dayID === dayFeatureID);
+    const movieList = currentDay?.movies;
+
     return(
         <div className={styles.dayFeature}>
-            <h2 className={styles.dayDate}>{props.date}</h2>
-            <section className={styles.movieList}>{props.movies.map((film : MovieEntry) => 
-            <MovieCard key={film.title} date={props.date} 
-            length={film.length} isSoldOut={film.isSoldOut} 
-            price={film.price} seats={film.seats}
-            location={film.location} title={film.title} id={film.id}/>)}</section>
+            <h2 className={styles.dayDate}>{dayFeatureDate}</h2>
+            <section className={styles.movieList}>{movieList?.map(movie => <MovieCard screeningID={movie.screeningID}/>)}</section>
         </div>
     )
 }
