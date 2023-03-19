@@ -9,8 +9,7 @@ import Row from "./Row";
 
 function SeatSelectScreen()
 {
-    const { id } = useParams();
-
+    const { screeningID } = useParams();
 
     return(
         <div className={styles.pageContainer}>

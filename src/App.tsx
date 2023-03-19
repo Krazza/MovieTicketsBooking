@@ -15,7 +15,7 @@ function App() {
                 <Routes>
                     <Route path="/" element={<Layout/>}>
                         <Route index element={<MovieList/>}/>
-                        <Route path="/tickets/:id" element={<SeatSelectScreen/>}/>
+                        <Route path="/tickets/:screeningID" element={<SeatSelectScreen/>}/>
                     </Route>
                 </Routes>
         </BrowserRouter>
